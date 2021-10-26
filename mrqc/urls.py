@@ -21,6 +21,6 @@ admin.AdminSite.site_header = 'bp神经网络汽车美容管理系统'
 admin.AdminSite.site_title ='bp神经网络汽车美容管理系统'
 urlpatterns = [
     path('', admin.site.urls),
-    path('',include('apps.rcgl.urls'))
+    path('index/',include('apps.rcgl.urls'))
 ]
 

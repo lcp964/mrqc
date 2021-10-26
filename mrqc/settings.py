@@ -140,7 +140,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 SIMPLEUI_DEFAULT_THEME = 'layui.css'
 
 #汽车logo
-SIMPLEUI_LOGO = 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimg.zcool.cn%2Fcommunity%2F01ee07554399430000019ae9a56787.jpg%401280w_1l_2o_100sh.jpg&refer=http%3A%2F%2Fimg.zcool.cn&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1637159507&t=f9e0f2b3a39cc6d6f5814166a89e06b2'
+# SIMPLEUI_LOGO = 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimg.zcool.cn%2Fcommunity%2F01ee07554399430000019ae9a56787.jpg%401280w_1l_2o_100sh.jpg&refer=http%3A%2F%2Fimg.zcool.cn&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1637159507&t=f9e0f2b3a39cc6d6f5814166a89e06b2'
 
 SIMPLEUI_HOME_INFO = False
 
@@ -155,22 +155,22 @@ SIMPLEUI_CONFIG = {
     },
 {
         'name': '日常业务管理' ,
-        'icon': 'fa fa-desktop',
+        'icon': 'fa fa-bars',
         'models': [{
             'name': '预约登记',
             'url': '/rcgl/rcgl/',
-            'icon': 'far fa-surprise'
+            'icon': 'fas fa-shield-alt'
         }, {
             'name': '预约查询',
-            'url': 'https://www.wezoz.com',
+            'url': '/rcgl/rcgl/',
             'icon': 'fab fa-github'
         }, {
             'name': '美容方案制定',
-            'url': 'https://www.wezoz.com',
+            'url': 'rcgl/mrfan/',
             'icon': 'fab fa-github'
         }, {
             'name': '业务结算',
-            'url': 'https://www.wezoz.com',
+            'url': 'rcgl/mrfan/',
             'icon': 'fab fa-github'
         }],
 
@@ -179,11 +179,11 @@ SIMPLEUI_CONFIG = {
         'icon': 'fa fa-desktop',
         'models': [{
             'name': '配料入库',
-            'url': 'http://baidu.com',
+            'url': 'rcgl/liao/',
             'icon': 'far fa-surprise'
         },{
             'name': '领料入库',
-            'url': 'http://baidu.com',
+            'url': 'rcgl/liao/',
             'icon': 'far fa-surprise'
         },{
             'name': '库存查询',
@@ -250,4 +250,4 @@ SIMPLEUI_CONFIG = {
 ]}
 
 
-SIMPLEUI_HOME_PAGE= ""
+autoescape = True
